@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbarLayout01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:elevation="2dp"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <LinearLayout
+                style="@style/AppTheme.Brand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/sortContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_small"
+                    android:layout_marginEnd="@dimen/spacing_large"
+                    android:layout_marginStart="@dimen/spacing_large"
+                    android:layout_marginTop="@dimen/spacing_large">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sort_label"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_medium"/>
+
+                    <TextView
+                        android:id="@+id/sort"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/spacing_xlarge"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_medium"
+                        tools:text="정확도"/>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/keyword"
+                    style="@style/AppTheme.Brand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_medium"
+                    android:layout_marginEnd="@dimen/spacing_medium"
+                    android:layout_marginStart="@dimen/spacing_medium"
+                    android:hint="@string/input_keyword"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:labelFor="@id/keyword"
+                    android:maxLines="1"
+                    android:textSize="@dimen/text_large"
+                    android:theme="@style/AppTheme.Brand"/>
+            </LinearLayout>
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.apollo.andorid.apollosearch.view.search.SearchActivity">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/blogs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/sortContainer"
+            tools:listitem="@layout/item_blog"/>
+    </FrameLayout>
+
+    <ProgressBar
+        android:id="@+id/searchIndicator"
+        style="@style/AppTheme.Brand"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:indeterminate="true"/>
+
+    <TextView
+        android:id="@+id/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sortContainer"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:text="@string/empty_result"
+        android:visibility="gone"/>
+
+</android.support.design.widget.CoordinatorLayout>

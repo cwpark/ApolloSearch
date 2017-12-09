@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/brandColor</color>
+    <color name="colorPrimaryDark">@color/brandColorDark</color>
+    <color name="colorAccent">@color/white</color>
+
+    <color name="brandColor">#3EAF0E</color>
+    <color name="brandColorDark">#24AD1D</color>
+
+    <color name="textColor">@color/lightBlack</color>
+    <color name="subtextColor">@color/gray_5</color>
+
+    <!-- grayscale colors -->
+    <color name="lightBlack">#333333</color>
+    <color name="gray_5">#555555</color>
+    <color name="white">#ffffff</color>
+</resources>
