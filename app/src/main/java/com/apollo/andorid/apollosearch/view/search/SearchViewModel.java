@@ -7,7 +7,7 @@ import com.apollo.andorid.apollosearch.R;
 import com.apollo.andorid.apollosearch.data.Blog;
 import com.apollo.andorid.apollosearch.data.SearchResult;
 import com.apollo.andorid.apollosearch.data.Sort;
-import com.apollo.andorid.apollosearch.data.source.remote.BlogRepository;
+import com.apollo.andorid.apollosearch.data.source.BlogRepository;
 import com.apollo.andorid.apollosearch.data.source.remote.exception.NaverApiError;
 import com.apollo.andorid.apollosearch.data.source.remote.exception.RetrofitException;
 import com.apollo.andorid.apollosearch.view.base.ErrorMessageModel;

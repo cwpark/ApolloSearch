@@ -18,7 +18,7 @@ import android.widget.Toast;
 
 import com.apollo.andorid.apollosearch.R;
 import com.apollo.andorid.apollosearch.data.Sort;
-import com.apollo.andorid.apollosearch.data.source.remote.BlogRepository;
+import com.apollo.andorid.apollosearch.data.source.BlogRepository;
 import com.apollo.andorid.apollosearch.util.DLog;
 import com.apollo.andorid.apollosearch.view.base.BaseFragment;
 import com.apollo.andorid.apollosearch.view.base.EndlessScrollListener;
