@@ -32,6 +32,7 @@ public void search() {
 
 ## 2. 검색 결과 목록 화면 제공
 ![search](screenshots/search.png)
+
 [SearchActivity](https://github.com/cwpark/ApolloSearch/blob/master/app/src/main/java/com/apollo/andorid/apollosearch/view/search/SearchActivity.java)에서 검색 결과 목록 화면을 제공합니다.
 
 뷰의 상태 변화는 [SearchViewModel](https://github.com/cwpark/ApolloSearch/blob/master/app/src/main/java/com/apollo/andorid/apollosearch/view/search/SearchViewModel.java)의 Observable 데이터를 [SearchFragment](https://github.com/cwpark/ApolloSearch/blob/master/app/src/main/java/com/apollo/andorid/apollosearch/view/search/SearchFragment.java)에서 바인딩하여 변화가 있을 때마다 업데이트합니다.
@@ -130,6 +131,7 @@ webView.setWebChromeClient(new WebChromeClient() {
 
 ## 4. 검색 결과 Pagiantion
 ![load more](screenshots/load_more.png)
+
 pagination 처리를 위해 [BlogRepository](https://github.com/cwpark/ApolloSearch/blob/master/app/src/main/java/com/apollo/andorid/apollosearch/data/source/BlogRepository.java)에서 start, display 대신 page를 관리하도록 했습니다.
 
 [관련 코드:](https://github.com/cwpark/ApolloSearch/blob/master/app/src/main/java/com/apollo/andorid/apollosearch/data/source/BlogRepository.java#L71)
