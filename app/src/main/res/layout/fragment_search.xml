@@ -76,14 +76,13 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:context="com.apollo.andorid.apollosearch.view.search.SearchActivity">
+        tools:context=".ui.search.SearchActivity">
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/blogs"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@id/sortContainer"
-            tools:listitem="@layout/item_blog"/>
+            tools:listitem="@layout/item_post"/>
     </FrameLayout>
 
     <ProgressBar

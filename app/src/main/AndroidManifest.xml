@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.apollo.andorid.apollosearch">
+    package="me.chulwoo.naver.blog.search">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -14,7 +14,7 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name=".view.intro.IntroActivity"
+            android:name=".ui.intro.IntroActivity"
             android:noHistory="true"
             android:theme="@style/AppTheme.Brand">
 
@@ -27,9 +27,9 @@
         </activity>
 
         <activity
-            android:name=".view.search.SearchActivity"
+            android:name=".ui.search.SearchActivity"
             android:windowSoftInputMode="stateHidden" />
-        <activity android:name=".view.webview.WebViewActivity" />
+        <activity android:name=".ui.webview.WebViewActivity" />
     </application>
 
 </manifest>
